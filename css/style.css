@@ -4,6 +4,10 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
+:root{
+	--red-color: #D62511;
+	--green-color: #00812E;
+}
 html,
 body {
 	margin: 0;
@@ -171,7 +175,7 @@ ul.forms_right li {
 
 .top_menu_w3layouts {
 	padding: 0.5em 0em;
-	background:#89379a;
+	background:#D62511;
 }
 
 .content {
@@ -272,11 +276,12 @@ ul.forms_right li {
 	
 }
 
-.navbar-default a.navbar-brand h1 {
-    color: #89379a;
-    font-weight: 700;
-    margin-top: 6px;
-    letter-spacing: 2px;
+.navbar-default a.navbar-brand img {
+    /* color: #89379a; */
+    /* font-weight: 700; */
+    margin-top: 4px;
+	height: 45px;
+    /* letter-spacing: 2px; */
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -289,20 +294,20 @@ ul.forms_right li {
 }
 
 .navbar-nav>li>a.active {
-	color: #89379a;
+	color: var(--red-color);
 	background: none;
 }
 
 .navbar-default .navbar-nav>.open>a,
 .navbar-default .navbar-nav>.open>a:hover,
 .navbar-default .navbar-nav>.open>a:focus {
-	color: #89379a;
+	color: var(--red-color);
 	background: none;
 }
 
 .navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-nav>li>a:focus {
-	color: #89379a;
+	color: var(--red-color);
 	background: none;
 }
 
