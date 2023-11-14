@@ -32,6 +32,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </head>
 
 <body>
+
+	<!-- Preloader -->
+	<!-- <div class="loader">
+		<div class="circle"></div>
+		<div class="circle"></div>
+		<div class="circle"></div>
+		<div class="circle"></div>
+	</div>	 -->
+
+
 	<!-- header -->
 	<div class="header">
 		<div class="top_menu_w3layouts">
@@ -53,7 +63,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 
 		<div class="content white">
-			<nav class="navbar navbar-default" role="navigation">
+			<nav class="navbar navbar-default" role="navigation" id="navbar">
 				<div class="container">
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -448,51 +458,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 	<!-- js -->
 	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-	<script>
-		$('ul.dropdown-menu li').hover(function () {
-			$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
-		}, function () {
-			$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
-		});
-	</script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
-	<!-- Flexisel-js for-testimonials -->
-<script type="text/javascript">
-							$(window).load(function() {
-								$("#flexiselDemo1").flexisel({
-									visibleItems:1,
-									animationSpeed: 1000,
-									autoPlay: false,
-									autoPlaySpeed: 3000,    		
-									pauseOnHover: true,
-									enableResponsiveBreakpoints: true,
-									responsiveBreakpoints: { 
-										portrait: { 
-											changePoint:480,
-											visibleItems: 1
-										}, 
-										landscape: { 
-											changePoint:640,
-											visibleItems:1
-										},
-										tablet: { 
-											changePoint:768,
-											visibleItems: 1
-										}
-									}
-								});
-								
-							});
-					</script>
-					<script type="text/javascript" src="js/jquery.flexisel.js"></script>
-<!-- Flexisel-js for-testimonials -->
-<!-- stats -->
+	<script type="text/javascript" src="js/jquery.flexisel.js"></script>
 	<script src="js/jquery.waypoints.min.js"></script>
 	<script src="js/jquery.countup.js"></script>
-		<script>
-			$('.counter').countUp();
-		</script>
 		<script src="https://kit.fontawesome.com/06f6aaa49e.js" crossorigin="anonymous"></script>
-<!-- //stats -->
+		<script src="js/main.js"></script>
 </body>
 </html>
