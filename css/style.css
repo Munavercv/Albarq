@@ -4,6 +4,9 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root{
 	--red-color: #D62511;
 	--green-color: #00812E;
@@ -13,7 +16,7 @@ body {
 	margin: 0;
 	font-size: 100%;
 	background: #fff;
-	font-family: 'Barlow', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 body a {
@@ -543,64 +546,64 @@ b.fa.fa-caret-right {
 /*-- banner --*/
 
 .carousel .item {
-	background: -webkit-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/2.jpg) no-repeat;
-	background: -moz-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/2.jpg) no-repeat;
-	background: -ms-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/2.jpg) no-repeat;
-	background: linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/2.jpg) no-repeat;
+	background: -webkit-linear-gradient(rgba(23, 22, 23, 092), rgba(23, 22, 23, 0.5)), url(../images/1.jpg) no-repeat;
+	background: -moz-linear-gradient(rgba(23, 22, 23, 0.9), rgba(23, 22, 23, 0.5)), url(../images/1.jpg) no-repeat;
+	background: -ms-linear-gradient(rgba(23, 22, 23, 0.9), rgba(23, 22, 23, 0.5)), url(../images/1.jpg) no-repeat;
+	background: linear-gradient(rgba(23, 22, 23, 0.9), rgba(23, 22, 23, 0.5)), url(../images/1.jpg) no-repeat;
 	background-size: cover;
 }
 
 .carousel .item.item2 {
-	background: -webkit-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/1.jpg) no-repeat;
-	background: -moz-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/1.jpg) no-repeat;
-	background: -ms-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/1.jpg) no-repeat;
-	background: linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/1.jpg) no-repeat;
+	background: -webkit-linear-gradient(rgba(23, 22, 23, 0.9), rgba(23, 22, 23, 0.5)), url(../images/2.jpg) no-repeat;
+	background: -moz-linear-gradient(rgba(23, 22, 23, 0.9), rgba(23, 22, 23, 0.5)), url(../images/2.jpg) no-repeat;
+	background: -ms-linear-gradient(rgba(23, 22, 23, 0.9), rgba(23, 22, 23, 0.5)), url(../images/2.jpg) no-repeat;
+	background: linear-gradient(rgba(23, 22, 23, 0.9), rgba(23, 22, 23, 0.5)), url(../images/2.jpg) no-repeat;
 	background-size: cover;
 }
 
 .carousel .item.item3 {
-	background: -webkit-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/3.jpg) no-repeat;
-	background: -moz-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/3.jpg) no-repeat;
-	background: -ms-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/3.jpg) no-repeat;
-	background: linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/3.jpg) no-repeat;
+	background: -webkit-linear-gradient(rgba(23, 22, 23, 0.9), rgba(23, 22, 23, 0.5)), url(../images/3.jpg) no-repeat;
+	background: -moz-linear-gradient(rgba(23, 22, 23, 0.9), rgba(23, 22, 23, 0.5)), url(../images/3.jpg) no-repeat;
+	background: -ms-linear-gradient(rgba(23, 22, 23, 0.9), rgba(23, 22, 23, 0.5)), url(../images/3.jpg) no-repeat;
+	background: linear-gradient(rgba(23, 22, 23, 0.9), rgba(23, 22, 23, 0.5)), url(../images/3.jpg) no-repeat;
 	background-size: cover;
 }
 
 .carousel .item.item4 {
-	background: -webkit-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/4.jpg) no-repeat;
-	background: -moz-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/4.jpg) no-repeat;
-	background: -ms-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/4.jpg) no-repeat;
-	background: linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/4.jpg) no-repeat;
+	background: -webkit-linear-gradient(rgba(23, 22, 23, 0.9), rgba(23, 22, 23, 0.5)), url(../images/1.jpg) no-repeat;
+	background: -moz-linear-gradient(rgba(23, 22, 23, 0.9), rgba(23, 22, 23, 0.5)), url(../images/1.jpg) no-repeat;
+	background: -ms-linear-gradient(rgba(23, 22, 23, 0.9), rgba(23, 22, 23, 0.5)), url(../images/1.jpg) no-repeat;
+	background: linear-gradient(rgba(23, 22, 23, 0.9), rgba(23, 22, 23, 0.5)), url(../images/1.jpg) no-repeat;
 	background-size: cover;
 }
 
 .carousel .item.item5 {
-	background: -webkit-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/4.jpg) no-repeat;
-	background: -moz-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/4.jpg) no-repeat;
-	background: -ms-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/4.jpg) no-repeat;
-	background: linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/4.jpg) no-repeat;
+	background: -webkit-linear-gradient(rgba(23, 22, 23, 0.9), rgba(23, 22, 23, 0.5)), url(../images/2.jpg) no-repeat;
+	background: -moz-linear-gradient(rgba(23, 22, 23, 0.9), rgba(23, 22, 23, 0.5)), url(../images/2.jpg) no-repeat;
+	background: -ms-linear-gradient(rgba(23, 22, 23, 0.9), rgba(23, 22, 23, 0.5)), url(../images/2.jpg) no-repeat;
+	background: linear-gradient(rgba(23, 22, 23, 0.9), rgba(23, 22, 23, 0.5)), url(../images/2.jpg) no-repeat;
 	background-size: cover;
 }
 
 .carousel-caption h2,
 .carousel-caption h3 {
 	font-size: 3em;
-	font-weight: 100;
+	font-weight: 800;
 	letter-spacing: 2px;
 	text-transform: uppercase;
-	line-height:1.5em;
+	line-height:1.2em;
 }
 
 .carousel-caption h2 span, .carousel-caption h3 span {
-    font-weight: 700;
-    color: #cb1def;
+    font-weight: 800;
+    color: var(--green-color);
 	display:block;
 }
 
 .carousel-caption p {
-	letter-spacing: 7px;
-	font-size: 1.1em;
-	font-weight: 300;
+	letter-spacing: 5px;
+	font-size: 1.3em;
+	font-weight: 500;
 	color: #fff;
 	margin: 1em 0 1em 0;
 }
