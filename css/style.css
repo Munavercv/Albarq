@@ -324,7 +324,7 @@ ul.forms_right li {
 	overflow: hidden;
 	position: relative;
 	margin-bottom: 0!important;
-	border: 1px solid transparent;
+	border: 0px solid transparent;
 }
 
 /* navbar sticky */
@@ -905,14 +905,14 @@ a.pa_italic:focus {
     margin-bottom: 5em;
 }
 .w3l_header:after {
-    border-top: 2px solid #89379a;
+    border-top: 2px solid var(--green-color);
     display: block;
-    width: 81px;
+    width: 60px;
     content: "";
     margin: 8px auto 0;
 }
 .w3l_header {
-    font-size: 3em;
+    font-size: 1.5em;
     color: #262c38;
     letter-spacing: 1px;
     position: relative;
@@ -931,6 +931,7 @@ a.pa_italic:focus {
     color: #5e5e5e;
     line-height: 1.8em;
 }
+
 /* about */
 .about-main {
     padding: 5em 0;
@@ -939,20 +940,43 @@ a.pa_italic:focus {
 .about-grid1 {
     background: url(../images/g8.jpg) no-repeat center;
     background-size: cover;
-    min-height: 450px;
-    border: 1px solid #d6d6d6;
+    min-height: 500px;
+	box-shadow: 5px 5px 18px rgba(0, 0, 0, 0.3);
 }
 
 .about-grid2 {
     padding: 0em 0 0 4em;
 }
-.about-subgrid p {
+.about-subgrid h3 {
     color: #000;
     text-transform: capitalize;
     font-size: 1.8em;
-    font-weight: bold;
-    font-style: italic;
+    font-weight: 800;
     margin:0;
+	line-height: 2.5rem;
+}
+
+.about-subgrid p{
+	font-size: 15px;
+	font-weight: 500;
+    margin: 0;
+    width: 60%;
+    color: #5e5e5e;
+    line-height: 1.5em;
+}
+
+.about-subgrid i{
+	color: var(--green-color);
+	margin-top: 18px;
+	font-size: 2rem;
+}
+.about-subgrid i span{
+	color: #252525;
+	font-family: 'Montserrat',sans-serif;
+	font-size: 1.5rem;
+	font-weight: 600;
+	margin-left: -18px;
+	text-transform: none;
 }
 
 .about-subgrid span {
@@ -969,7 +993,7 @@ a.pa_italic:focus {
     color: #000;
     margin: 0.5em 0;
     display: inline-block;
-    border-right: 5px double #89379a;
+    border-right: 5px double var(--green-color);
     padding-right: 10px;
 }
 
@@ -994,13 +1018,14 @@ a.pa_italic:focus {
 }
 
 ul.w3l-about-list {
-    padding: 0em 0 0 2em;
+    padding: 1.5em 0 0 2em;
 }
 
 ul.w3l-about-list li {
-    list-style-type: square;
+    /* list-style-type: disc; */
+	list-style-image: url(../images/checkmark.svg);
     font-size: 1.2em;
-    color: #000;
+    color: #464646;
     line-height: 2;
     letter-spacing: 0.5px;
     font-style: italic;
