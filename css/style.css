@@ -397,13 +397,15 @@ ul.forms_right li {
     letter-spacing: 2px;
 }
 
-.navbar-default .navbar-toggle:hover,
+/* .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-	background-color: #111;
-}
+	background-color: none;
+} */
 
 .navbar-default .navbar-toggle .icon-bar {
-   background-color: #ffffff;
+   background-color: #111;
+   height: .19em;
+   border-radius: 20px;
 }
 
 .navbar-default .navbar-nav>.active>a:before {
@@ -422,10 +424,10 @@ ul.forms_right li {
 	padding: 9px 10px;
 	margin-top: 8px;
 	margin-bottom: 8px;
-	background-color: #282828;
+	/* background-color: #282828; */
 	background-image: none;
-	border: 1px solid transparent;
-	border-radius: 0;
+	border: 0px solid transparent;
+	border-radius: 5px;
 }
 
 .navbar-default .navbar-nav>.active>a,
