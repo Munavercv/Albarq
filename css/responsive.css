@@ -517,6 +517,12 @@ ul.forms_right {
 	}
 }
 
+
+@media (min-width: 768px){ .navbar {
+    border-radius: 0px;
+}
+}
+
 @media(max-width:768px) {
 	#quote-carousel .carousel-control.right {
 		right: -24px !important;
@@ -605,7 +611,6 @@ ul.forms_right {
 	}
 	.navbar-toggle {
     margin-top: 0px;
-	margin-right: 1em;
     margin-bottom: 0px;
 	}
 	.navbar-nav>li {
@@ -638,7 +643,7 @@ ul.forms_right {
 		margin-left: 1em;
 	}
 	.navbar-default a.navbar-brand img {
-		margin-top: 0;
+		margin-top: -3px;
 		padding-left: 1em;
 
 	}
@@ -1334,9 +1339,6 @@ h4.agileinfo-head {
     min-height: 283px!important;
     padding-top: 4em;
 }
-	.navbar-default a.navbar-brand h1 {
-		font-size:30px;
-	}
 	.carousel-control {
 		line-height: 16.5em;
 	}
