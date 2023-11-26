@@ -1107,10 +1107,12 @@ ul.forms_right li a {
     width: 100%;
 }
 .our-advantages-grd-right {
-    width: 60%;
+	margin-top: 35px;
+    width: 70%;
 }
 .our-advantages-grd-right h4 {
-    line-height: 60px;
+    /* line-height: 60px; */
+	letter-spacing: 0px;
 }
 .bottom-head p {
     width: 100%;
