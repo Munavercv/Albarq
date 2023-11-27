@@ -35,7 +35,10 @@ Author URL: http://w3layouts.com
   --bs-dark: #212529;
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0))
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  --red-color: #D62511;
+	--green-color: #00812E;
+  --black-color: #272727;
 }
 
 *,
@@ -4485,7 +4488,7 @@ fieldset:disabled .btn {
   padding-top: .3125rem;
   padding-bottom: .3125rem;
   margin-right: 1rem;
-  font-size: 1.25rem;
+  /* max-height: 1.25rem; */
   text-decoration: none;
   white-space: nowrap
 }
@@ -11918,7 +11921,7 @@ p.white {
 /*-- //container --*/
 
 /*-- toggle switch --*/
-.theme-switch-wrapper {
+/* .theme-switch-wrapper {
   display: flex;
   align-items: center;
 }
@@ -11936,7 +11939,7 @@ p.white {
 
 .theme-switch input {
   display: none;
-}
+} */
 
 /*-- //toggle switch --*/
 
@@ -18206,13 +18209,13 @@ input:checked+.mode-container i.gg-moon {
 /* top header */
 .w3l-top-header {
   padding: 15px 0px;
-  background: #26243c;
+  background: #272727;
   border-bottom: 1px solid #363636;
 }
 
 .w3l-top-header .top-headers li a,
 .w3l-top-header .top-headers li {
-  color: #aab2b9;
+  color: white;
   font-size: 15px;
   font-weight: 500;
   font-family: 'Montserrat', sans-serif;
@@ -18224,7 +18227,7 @@ input:checked+.mode-container i.gg-moon {
 
 .w3l-top-header .top-headers li i {
   margin-right: 8px;
-  color: #ababab;
+  color: var(--green-color);
 }
 
 .w3l-top-header .top-headers li {
@@ -18309,7 +18312,7 @@ a.navbar-brand span.fa {
 .navbar-expand-lg .navbar-nav .nav-link.show */
 .navbar-expand-lg .navbar-nav .nav-item.active .nav-link,
 .navbar-expand-lg .navbar-nav .nav-link:hover {
-  color: var(--primary-color);
+  color: var(--red-color);
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -18318,7 +18321,7 @@ a.navbar-brand span.fa {
   color: #fff;
   font-weight: 500;
   text-transform: uppercase;
-  color: var(--font-color);
+  color: var(--black-color);
 }
 
 .navbar-expand-lg a.nav-link.donate.btn.btn-style {
@@ -18389,7 +18392,7 @@ header.nav-fixed {
   padding: 0px;
   border-bottom: none;
   z-index: 9 !important;
-  background: #26243c;
+  background: #fff;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
   height: 80px;
   /* for z-index:10 to display gallery popup */
@@ -18439,7 +18442,7 @@ nav ul li a:hover {
 
 .nav-fixed .navbar-expand-lg .navbar-nav .nav-item.active .nav-link,
 .nav-fixed .navbar-expand-lg .navbar-nav .nav-link:hover {
-  color: #fff;
+  color: var(--red-color);
 }
 
 /* .navbar .search-right {
@@ -18587,7 +18590,7 @@ button.search-btn:hover {
 
   .navbar-expand-lg .navbar-nav .nav-link {
     display: block;
-    color: var(--heading-color);
+    color: var(--black-color);
   }
 
   .navbar-toggler-icon {
@@ -18605,7 +18608,7 @@ button.search-btn:hover {
     font-size: 20px;
     line-height: 1.2em;
     color: #fff;
-    background: var(--primary-color);
+    background: var(--black-color);
     line-height: 34px;
   }
 
@@ -18615,7 +18618,7 @@ button.search-btn:hover {
 
   .navbar-expand-lg .navbar-nav .nav-item.active .nav-link,
   .navbar-expand-lg .navbar-nav .nav-link:hover {
-    color: var(--primary-color);
+    color: var(--red-color);
   }
 
   .navbar-expand-lg a.nav-link.donate.btn.btn-style {
@@ -20319,7 +20322,7 @@ p.copy-footer-29 a:hover {
   color: #fff;
   width: 50px;
   height: 50px;
-  background: var(--primary-color);
+  background: var(--green-color);
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -o-border-radius: 50%;
