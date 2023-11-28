@@ -11712,7 +11712,10 @@ fieldset:disabled .btn {
 
 
 :root {
-  --primary-color: #673ab7;
+  --red-color: #D62511;
+	--green-color: #00812E;
+  --black-color: #272727;
+  --primary-color: #00812E;
   --secondary-color: #00c16e;
   --font-color: #707070;
   --bg-color: #fff;
@@ -11739,7 +11742,7 @@ fieldset:disabled .btn {
   --box-shadow-color-3: rgb(0 0 0 / 41%);
 }
 
-[data-theme="dark"] {
+/* [data-theme="dark"] {
   --primary-color: #673ab7;
   --secondary-color: #02983f;
   --font-color: #b7b7b7;
@@ -11764,7 +11767,7 @@ fieldset:disabled .btn {
   --box-shadow-map: rgb(18 12 12);
   --box-shadow-color-2: rgb(16 9 9);
   --box-shadow-color-3: rgb(6 4 4);
-}
+} */
 
 .noscroll {
   overflow: hidden;
@@ -19173,9 +19176,9 @@ form.search-box {
 
 /* 3grids section */
 .about-single {
-  background: var(--bg-color);
+  /* background: var(--bg-color); */
   padding: 40px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+  /* box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); */
 }
 
 .about-content h5 a {
