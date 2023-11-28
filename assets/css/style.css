@@ -3139,7 +3139,7 @@ textarea.form-control.is-invalid {
 .btn-check:focus+.btn,
 .btn:focus {
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgb(103 58 183 / 42%);
+  box-shadow: 0 0 0 0.25rem rgba(116, 189, 119, 0.42);
 }
 
 .btn.disabled,
@@ -3196,22 +3196,22 @@ fieldset:disabled .btn {
 
 .btn-secondary {
   color: #ffffff;
-  background-color: #00c16e;
-  border-color: #00c16e;
+  background-color: var(--green-color);
+  /* border-color: #00c16e; */
 }
 
 .btn-secondary:hover {
   color: #ffffff;
   background-color: #02a55f;
-  border-color: #02a55f;
+  /* border-color: #02a55f; */
 }
 
 .btn-check:focus+.btn-secondary,
 .btn-secondary:focus {
   color: #fff;
   background-color: #00c16e;
-  border-color: #00c16e;
-  box-shadow: 0 0 0 0.25rem rgb(244 67 54 / 30%);
+  /* border-color: #00c16e; */
+  /* box-shadow: 0 0 0 0.25rem rgb(244 67 54 / 30%); */
 }
 
 .btn-check:active+.btn-secondary,
@@ -19099,7 +19099,7 @@ form.search-box {
 
 .w3l-banner:before {
   content: "";
-  background: rgba(103, 58, 183, 0.8);
+  background: rgba(0, 0, 0, 0.8);
   position: absolute;
   top: 0;
   bottom: 0;
@@ -19118,6 +19118,10 @@ form.search-box {
 
 .w3l-banner h3 sup {
   font-size: 17px;
+}
+
+.w3l-banner h3 span {
+  color: var(--green-color);
 }
 
 .banner-info-grid {
