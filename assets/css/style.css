@@ -19327,7 +19327,15 @@ span.text-italic {
 
 /* footer block */
 .w3l-footer-29-main {
-  background: #26243c;
+  background: var(--black-color);
+  background-image: url('../images/Logo5.png');
+              background-size: 40em;
+            background-position: center center;
+            background-repeat: no-repeat;
+}
+
+.w3l-footer-29-main img.footer-title-29{
+  max-height: 60px;
 }
 
 .w3l-footer-29-main h6.footer-title-29 {
@@ -19349,10 +19357,16 @@ span.text-italic {
 
 .w3l-footer-29-main .footer-list-29 ul li a,
 .w3l-footer-29-main .footer-list-29 p a,
-.w3l-footer-29-main .footer-list-29 p {
+.w3l-footer-29-main .footer-list-29 p,
+.w3l-footer-29-main .footer-list-29 img {
   font-size: 16px;
+  font-weight: 600;
   color: #ababab;
   padding-bottom: 4px;
+}
+
+.w3l-footer-29-main .footer-list-29 p{
+  line-height: 20px;
 }
 
 .w3l-footer-29-main .footer-list-29 ul li a {
