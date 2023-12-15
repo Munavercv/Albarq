@@ -20330,6 +20330,11 @@ div#small-dialog iframe {
   border: none;
   background: var(--bg-grey);
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+  transition: all 500ms;
+}
+
+.service-section .card:hover {
+  box-shadow: 0 3px 30px rgba(0, 0, 0, 0.2);
 }
 
 .service-section .card img {
@@ -20338,25 +20343,62 @@ div#small-dialog iframe {
   border-bottom-right-radius: 0px;
 }
 
+.service-section .card .card-icon {
+  /* display: inline-block; */
+  position: relative;
+  bottom: 30px;
+  left: 10.8em;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  background: var(--green-color);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  text-align: center;
+  padding: 0.5em 0.4em;
+}
+
 .service-heading {
   font-size: 20px;
   line-height: 30px;
   font-weight: 600;
   color: var(--heading-color);
 }
-.card:hover .service-heading{
-  color: var(--primary-color);
-} 
+
 .service-details {
-  padding: 20px;
+  margin-top: -30px;
+  padding: 15px;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
+}
+
+.service-details p a{
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--black-color);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 500ms;
+}
+
+.service-details p a:hover{
+  color: var(--red-color);
 }
 
 @media screen and (max-width: 568px) {
   .service-heading {
     font-size: 18px;
     line-height: 28px;
+  }
+
+  .service-section .card .card-icon {
+    left: 14em;
   }
 }
 
