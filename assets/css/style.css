@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 /*--
 Author: W3layouts
 Author URL: http://w3layouts.com
@@ -11860,6 +11864,7 @@ p {
   margin: 0;
   padding: 0;
   font-size: 16px;
+  font-weight: 400;
   line-height: 25px;
   color: var(--font-color);
   font-family: 'Montserrat', sans-serif;
@@ -19199,6 +19204,42 @@ form.search-box {
   color: var(--primary-color);
 }
 
+.about-section .button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 15px 25px;
+  border-radius: 6px;
+  border: none;
+  /* overflow: hidden; */
+  background: var(--green-color);
+  color: white;
+}
+
+.about-section .button-text {
+  transform: translateX(15px);
+  font-size: 1.2em;
+  font-weight: 500;
+  transition-duration: 0.3s;
+}
+
+.about-section .button p{
+  color: white;
+}
+
+.about-section .iconer {
+  transform: translateY(35px);
+  transition-duration: 0.3s;
+}
+
+.about-section .button:hover .button-text {
+  transform: translateX(0px);
+}
+
+.about-section .button:hover .iconer {
+  transform: translateY(0px);
+}
+
 @media (max-width: 568px) {
   .about-content h5 a {
     font-size: 20px;
@@ -20403,6 +20444,78 @@ div#small-dialog iframe {
 }
 
 /* //serviceblock2 section */
+
+
+/* service discription */
+.discript-sec .list-group{
+  width: 25%;
+}
+
+.discript-sec .list-group button{
+  border-radius: 0px;
+  border: 0;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  line-height: 20px;
+  color: var(--black-color);
+  background-color: rgba(0, 0, 0, .05);
+  font-weight: 600;
+  transition: all 500ms;
+  margin-bottom: 15px;
+}
+
+.discript-sec .list-group .activeb{
+  color: var(--red-color);
+}
+
+.discript-sec .list-group button:hover{
+  background-color: var(--green-color);
+  color: white;
+}
+
+.discript-sec .list-group button i{
+  color: var(--black-color);
+}
+
+.disc-sec{
+  width: 70%;
+}
+
+.disc-sec img{
+  max-width: 100%;
+  height: auto;
+}
+
+.disc-sec h2{
+  font-weight: 600;
+}
+
+@media screen and (max-width: 568px){
+
+  .discript-sec{
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+
+  .discript-sec .list-group{
+    width: 100%;
+  }
+
+  .disc-sec{
+    width: 100%;
+  }
+  
+  .disc-sec img{
+    max-width: 100%;
+    margin-top: 1em;
+  }
+
+  .disc-sec p{
+    margin-top: 1em;
+  }
+}
+
+/* service discription */
 
 
 /* contact section */
