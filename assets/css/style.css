@@ -3923,7 +3923,7 @@ fieldset:disabled .btn {
 .dropdown-menu {
   position: absolute;
   z-index: 1000;
-  display: none;
+  opacity: 0;
   min-width: 10rem;
   padding: .5rem 0;
   margin: 0;
@@ -3934,7 +3934,8 @@ fieldset:disabled .btn {
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, .15);
-  border-radius: .25rem
+  border-radius: .25rem;
+  transition: opacity 0.2s ease-in-out;
 }
 
 .dropdown-menu[data-bs-popper] {
@@ -4565,6 +4566,19 @@ fieldset:disabled .btn {
   max-height: var(--bs-scroll-height, 75vh);
   overflow-y: auto
 }
+
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+}
+
+.dropdown-menu li a:hover{
+  color: var(--red-color);
+}
+
+.dropdown .active {
+  color: var(--red-color);
+}
+
 
 @media (min-width:576px) {
   .navbar-expand-sm {
@@ -18360,7 +18374,7 @@ a.dropdown-item:hover {
 
 a.dropdown-item.active {
   background: transparent;
-  color: var(--primary-color);
+  color: var(--red-color);
 }
 
 .navbar-expand-lg .navbar-nav .dropdown-menu {
@@ -18382,7 +18396,7 @@ a.dropdown-item.active {
   transform: translateX(-50%) rotateZ(45deg);
   position: absolute;
   top: -7px;
-  left: 49%;
+  left: 30%;
   z-index: 1001;
 }
 
