@@ -21,6 +21,7 @@ Author URL: http://w3layouts.com
     <!-- Template CSS Style link -->
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -175,7 +176,7 @@ Author URL: http://w3layouts.com
             <div class="d-grid cont-main-top mt-lg-5 mt-4">
                 <!-- contact form -->
                 <div class="contacts12-main">
-                    <form action="https://formsubmit.co/munavermunu80@gmail.com" method="post" class="main-input">
+                    <form id="submit-form" action="" class="main-input">
                         <div class="top-inputs d-grid">
                             <input type="text" placeholder="Name" name="name" id="w3lName" required="">
                             <input type="email" name="email" placeholder="Email" id="w3lSender" required="">
@@ -183,7 +184,7 @@ Author URL: http://w3layouts.com
                         <input type="text" placeholder="Phone number" name="Phone" id="w3lName" required="">
                         <textarea placeholder="Message" name="message" id="w3lMessage" required=""></textarea>
                         <div class="text-end">
-                            <button type="submit" class="btn btn-primary btn-style">Send</button>
+                            <button type="submit" value="submit" class="btn btn-primary btn-style">Send</button>
                         </div>
                     </form>
                 </div>
@@ -418,6 +419,28 @@ Author URL: http://w3layouts.com
     });
 </script>
 <!-- //disable body scroll which navbar is in active -->
+
+<!-- contact form submit result -->
+<script>
+    $("#submit-form").submit((e)=>{
+        e.preventDefault()
+        $.ajax({
+            url:"https://script.google.com/macros/s/AKfycbxdr-TsJ6_clmZaZV2O-VxXDbu-nLggWRpc9evObf_q_M1b-g8ACl_PcrREIjOoSeAk/exec",
+            data:$("#submit-form").serialize(),
+            method:"post",
+            success:function (response){
+                alert("Form submitted successfully")
+                window.location.reload()
+                //window.location.href="https://google.com"
+            },
+            error:function (err){
+                alert("Something Error")
+
+            }
+        })
+    })
+</script>
+<!-- contact form submit result -->
 
 <!--bootstrap-->
 <script src="assets/js/bootstrap.min.js"></script>
