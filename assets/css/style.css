@@ -18954,6 +18954,76 @@ a.read:hover span.fas {
   }
 }
 
+/* preloader */
+
+#main-body{
+  display: none;
+}
+.loader-body{
+  height: 100vh;
+  width: 100%;
+  background-color: var(--black-color);
+  position: relative;
+}
+.loader-body h3{
+  top: 48%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -100%);
+  font-size: 50px;
+  font-weight: 500;
+  text-align: center;
+  color: white;
+}
+
+.progress-loader {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.progress-loader {
+  width: 250px;
+  background: rgb(0 0 0 / 60%)  ;
+  height: 7px;
+  border-radius: 0px;
+}
+
+.progress {
+  content: '';
+  width: 250px;
+  height: 7px;
+  border-radius: 0px;
+  background: var(--green-color);
+  transition: 0.5s;
+  animation: loading1274 3s ease;
+}
+
+@keyframes loading1274 {
+  0% {
+    width: 0%;
+  }
+
+  10% {
+    width: 10%;
+  }
+
+  50% {
+    width: 40%;
+  }
+
+  60% {
+    width: 60%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+/* preloader */
+
 
 
 /*--/search--*/
