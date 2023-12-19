@@ -3924,6 +3924,7 @@ fieldset:disabled .btn {
   position: absolute;
   z-index: 1000;
   opacity: 0;
+  visibility: hidden; /* Initially hidden */
   min-width: 10rem;
   padding: .5rem 0;
   margin: 0;
@@ -3935,7 +3936,7 @@ fieldset:disabled .btn {
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, .15);
   border-radius: .25rem;
-  transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.3s ease, visibility 0.3s ease; /* Transition for fade-in effect */
 }
 
 .dropdown-menu[data-bs-popper] {
@@ -4569,6 +4570,7 @@ fieldset:disabled .btn {
 
 .dropdown:hover .dropdown-menu {
   opacity: 1;
+  visibility: visible;
 }
 
 .dropdown-menu li a:hover{
@@ -18594,15 +18596,16 @@ button.search-btn:hover {
   }
 
   .navbar-expand-lg .navbar-nav .dropdown-menu {
-    transform: translateX(0px);
-    border: 1px solid var(--border-color-light);
+    /* transform: translateX(0px);
+    border: 1px solid var(--border-color-light); */
+    display: none;
   }
 
-  .navbar-expand-lg .navbar-nav .dropdown-menu:before {
+  /* .navbar-expand-lg .navbar-nav .dropdown-menu:before {
     border: 1px solid var(--border-color-light);
     border-right: none;
     border-bottom: none;
-  }
+  } */
 
   header.nav-fixed {
     height: auto;
