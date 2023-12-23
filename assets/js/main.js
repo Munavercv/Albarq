@@ -79,3 +79,55 @@
     setTimeout(hidePreloaderAndShowContent, 3000);
 
     //  preloader function
+
+
+
+
+    // testimonial
+    // $(document).ready(function() {
+    //     $("#owl-demo1").owlCarousel({
+    //         loop: true,
+    //         nav: false,
+    //         responsiveClass: true,
+    //         responsive: {
+    //             0: {
+    //                 items: 1,
+    //                 nav: false
+    //             },
+    //             736: {
+    //                 items: 1,
+    //                 nav: false
+    //             }
+    //         }
+    //     })
+    // })
+    // testimonial
+
+
+
+    // owl carosel
+    $(document).ready(function ($) {
+        $("#owl-demo1").owlCarousel({
+            items: 1, // Number of items to show
+            loop: true, // Enable looping
+            autoplay: true, // Enable automatic sliding
+            autoplayTimeout: 7000, // Set the autoplay timeout in milliseconds (e.g., 5000 for 5 seconds)
+            autoplayHoverPause: true, // Pause on hover
+            autoplaySpeed: 800,
+            slideSpeed: 800, // Slide speed in milliseconds
+            nav: true, // Show navigation arrows
+            dots: true, // Show dots navigation
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                600: {
+                    items: 1,
+                },
+                1000: {
+                    items: 1,
+                },
+            },
+        });
+    });
+    // owl carosel
