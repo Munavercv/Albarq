@@ -3244,6 +3244,21 @@ fieldset:disabled .btn {
   border-color: #00c16e;
 }
 
+.btn-third{
+  color: #fff;
+  font-weight: 500;
+  background: none;
+  border-color: white;
+  border-width: 2px;
+}
+
+.btn-third:hover,
+.btn-third:focus{
+  color: white;
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
 .btn-success {
   color: #fff;
   background-color: #198754;
@@ -18339,8 +18354,13 @@ a.navbar-brand span.fa {
   color: var(--red-color);
 }
 
+.navbar-expand-lg .navbar-nav .nav-item button{
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
 .navbar-expand-lg .navbar-nav .nav-link {
-  padding: 6px 7px;
+  padding: 18px 7px;
   font-size: 16px;
   color: #fff;
   font-weight: 500;
@@ -20312,6 +20332,7 @@ p.copy-footer-29 a:hover {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   padding: 0;
+  filter: drop-shadow(3px 3px 12px rgb( 0, 0, 0, 0.2));
 }
 
 #movetop:hover {
@@ -21465,3 +21486,61 @@ div#small-dialog iframe {
 
 /* //contact section */
 
+
+/* appointment section */
+.w3l-apooint-12 input{
+  color: var(--font-color);
+  font-size: 16px;
+  line-height: 28px;
+  padding: 15px 20px;
+  outline: none;
+  border: 1px solid var(--border-color-light);
+  border-radius: 6px;
+  width: 100%;
+  background: var(--bg-grey);
+}
+
+.w3l-apooint-12 input:focus{
+border: 1px solid var(--border-color-light);
+background: var(--bg-color);
+}
+
+.w3l-apooint-12 select{
+  color: var(--font-color);
+  font-size: 16px;
+  line-height: 28px;
+  padding: 15px 20px;
+  outline: none;
+  border: 1px solid var(--border-color-light);
+  border-radius: 6px;
+  width: 100%;
+}
+
+.w3l-apooint-12 select:focus{
+outline: none;
+border: 1px solid var(--border-color-light);
+cursor: pointer;
+}
+
+.w3l-apooint-12 select option{
+  font-weight: 500;
+  color: var(--font-color);
+}
+
+.w3l-apooint-12 textarea{
+color: var(--font-color);
+font-size: 16px;
+line-height: 28px;
+padding: 15px 20px;
+outline: none;
+border: 1px solid var(--border-color-light);
+border-radius: 6px;
+width: 100%;
+background: var(--bg-grey);
+}
+
+.w3l-apooint-12 .submit-button{
+text-align: center;
+}
+
+/* //appointment section */
