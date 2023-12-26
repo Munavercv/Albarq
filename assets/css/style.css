@@ -19239,7 +19239,7 @@ form.search-box {
     line-height: 19px;
   }
   .c-item {
-    height: 570px;
+    height: 625px;
   }
 }
 
@@ -19249,7 +19249,7 @@ form.search-box {
     line-height: 45px;
   }
   .c-item {
-    height: 480px;
+    height: 570px;
   }
 }
 
@@ -21541,6 +21541,14 @@ background: var(--bg-grey);
 
 .w3l-apooint-12 .submit-button{
 text-align: center;
+}
+
+
+
+@media screen and (min-width:767px){
+  .w3l-apooint-12 label{
+    display: none;
+  }
 }
 
 /* //appointment section */
