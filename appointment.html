@@ -226,8 +226,9 @@ Author URL: http://w3layouts.com
     </select>
   </div>
   <div class="col-md-3">
-    <label for="dateInput">Select a date:</label>
-    <input type="date" name="date" class="form-control" id="date">
+    <!-- <label for="dateInput">Select a date:</label> -->
+    <!-- <input type="date" name="date" class="form-control" id="date"> -->
+    <input name="Date" placeholder="Date" class="form-control" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date" />
   </div>
   <div class="col-md-12">
     <textarea placeholder="your comment" name="comment" id="w3lMessage"></textarea>
