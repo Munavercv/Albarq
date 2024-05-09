@@ -13620,7 +13620,7 @@ p.inner-page-para a:hover{
   border: none;
   background: var(--bg-grey);
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
-  transition: all 500ms;
+  transition: all 1000ms;
 }
 
 .service-section .card:hover {
