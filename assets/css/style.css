@@ -4492,7 +4492,7 @@ fieldset:disabled .btn {
 }
 
 .dropdown:hover .dropdown-menu {
-  opacity: 1;
+  /* opacity: 1; */
   visibility: visible;
 }
 
@@ -12418,9 +12418,9 @@ a.read:hover span.fas {
 
 /* preloader */
 
-#main-body{
+/* #main-body{
   display: none;
-}
+} */
 .loader-body{
   height: 100vh;
   width: 100%;
