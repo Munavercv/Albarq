@@ -1,143 +1,105 @@
-    // move top
-    
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function () {
-        scrollFunction()
-    };
+// Move to top
 
-    function scrollFunction() {
-        if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
-            document.getElementById("movetop").style.display = "block";
-        } else {
-            document.getElementById("movetop").style.display = "none";
-        }
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = () => scrollFunction();
+
+const scrollFunction = () => {
+    const moveTop = document.getElementById("movetop");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        moveTop.style.display = "block";
+    } else {
+        moveTop.style.display = "none";
     }
+};
 
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    }
+// When the user clicks on the button, scroll to the top of the document
+const topFunction = () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+};
 
-    // move top
+// Move to top
 
 
-    // menu js
+// Menu JS
+$(window).on("scroll", () => {
+    let scroll = $(window).scrollTop();
+    const siteHeader = $("#site-header");
 
-    $(window).on("scroll", function () {
-        var scroll = $(window).scrollTop();
+    scroll >= 100 ? siteHeader.addClass("nav-fixed") : siteHeader.removeClass("nav-fixed");
+});
 
-        if (scroll >= 80) {
-            $("#site-header").addClass("nav-fixed");
-        } else {
-            $("#site-header").removeClass("nav-fixed");
-        }
+
+// Disable body scroll when navbar is active
+$(() => {
+    $(".navbar-toggler").click(() => {
+        $("body").toggleClass("noscroll");
     });
+});
 
 
+// Preloader function (Commented Out)
+/*
+const hidePreloaderAndShowContent = () => {
+    const preloader = document.getElementById("loader");
+    const content = document.getElementById("main-body");
+
+    preloader.style.display = "none";
+    content.style.display = "block";
+};
+
+setTimeout(hidePreloaderAndShowContent, 3000);
+*/
 
 
-        //disable body scroll which navbar is in active
-
-        $(function () {
-            $('.navbar-toggler').click(function () {
-                $('body').toggleClass('noscroll');
-            })
-        });
-
-     //disable body scroll which navbar is in active
-
-
-
-    //  preloader function
-
-     /*function hidePreloaderAndShowContent() {
-        var preloader = document.getElementById('loader');
-        var content = document.getElementById('main-body');
-
-        preloader.style.display = 'none';
-
-        content.style.display = 'block';
-    }
-
-    setTimeout(hidePreloaderAndShowContent, 3000);*/
-
-    //  preloader function
-
-
-
-
-    // testimonial
-    // $(document).ready(function() {
-    //     $("#owl-demo1").owlCarousel({
-    //         loop: true,
-    //         nav: false,
-    //         responsiveClass: true,
-    //         responsive: {
-    //             0: {
-    //                 items: 1,
-    //                 nav: false
-    //             },
-    //             736: {
-    //                 items: 1,
-    //                 nav: false
-    //             }
-    //         }
-    //     })
-    // })
-    // testimonial
-
-
-
-    // owl carosel
-    $(document).ready(function ($) {
-        $("#owl-demo1").owlCarousel({
-            items: 1, // Number of items to show
-            loop: true, // Enable looping
-            autoplay: true, // Enable automatic sliding
-            autoplayTimeout: 7000, // Set the autoplay timeout in milliseconds (e.g., 5000 for 5 seconds)
-            autoplayHoverPause: true, // Pause on hover
-            autoplaySpeed: 800,
-            slideSpeed: 800, // Slide speed in milliseconds
-            nav: true, // Show navigation arrows
-            dots: true, // Show dots navigation
-            responsive: {
-                0: {
-                    items: 1,
-                },
-                600: {
-                    items: 1,
-                },
-                1000: {
-                    items: 1,
-                },
-            },
-        });
+// Owl Carousel
+$(document).ready(($) => {
+    $("#owl-demo1").owlCarousel({
+        items: 1,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 7000,
+        autoplayHoverPause: true,
+        autoplaySpeed: 800,
+        slideSpeed: 800,
+        nav: true,
+        dots: true,
+        responsive: {
+            0: { items: 1 },
+            600: { items: 1 },
+            1000: { items: 1 },
+        },
     });
-    // owl carosel
+});
 
-        // NAVBAR DROPDOWN TOGGLE
-        let dropdownLink = document.getElementById('navbarDropdownMenuLink');
-        let dropmenu = document.getElementById('dropmenu');
-        let flag = false;
-        
-        dropdownLink.addEventListener('mouseover', function () {
-            dropmenu.style.opacity = 1;
-            flag = true;
-        });
-    
-        dropdownLink.addEventListener('mouseleave', function () {
-            dropmenu.style.opacity = 0;
-        });
-        
-        dropmenu.addEventListener('mouseover', function () {
-            if (flag) {
-                dropmenu.style.opacity = 1;
-            }
-        });
-    
-        dropmenu.addEventListener('mouseleave', function () {
-            dropmenu.style.opacity = 0;
-            flag = false;
-        });
-        // NAVBAR DROPDOWN TOGGLE
+
+// Navbar Dropdown Toggle
+const dropdownLink = document.getElementById("navbarDropdownMenuLink");
+const dropmenu = document.getElementById("dropmenu");
+let flag = false;
+
+dropdownLink.addEventListener("mouseover", () => {
+    dropmenu.style.opacity = 1;
+    flag = true;
+});
+
+dropdownLink.addEventListener("mouseleave", () => {
+    dropmenu.style.opacity = 0;
+});
+
+dropmenu.addEventListener("mouseover", () => {
+    if (flag) {
+        dropmenu.style.opacity = 1;
+    }
+});
+
+dropmenu.addEventListener("mouseleave", () => {
+    dropmenu.style.opacity = 0;
+    flag = false;
+});
+
+// Function to add numbers
+const addNumbers = (a, b) => a + b;
+
+const sum = addNumbers(12, 4);
+console.log(sum);

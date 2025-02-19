@@ -11831,7 +11831,7 @@ p.white {
 
 /* top header */
 .w3l-top-header {
-  padding: 15px 0px;
+  padding: 10px 0px;
   background: #272727;
   border-bottom: 1px solid #363636;
 }
@@ -11839,7 +11839,7 @@ p.white {
 .w3l-top-header .top-headers li a,
 .w3l-top-header .top-headers li {
   color: white;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 500;
   font-family: 'Montserrat', sans-serif;
 }
@@ -11885,7 +11885,7 @@ p.white {
   }
 
   .w3l-top-header {
-    padding: 14px 0px;
+    padding: 8px 0px;
   }
 }
 
@@ -11914,6 +11914,16 @@ a.logo {
   color: var(--heading-color);
   font-weight: 600;
   position: relative;
+}
+
+.navbar-brand img{
+  height: 45px;
+}
+
+@media screen and (max-width: 576px) {
+  .navbar-brand img{
+    height: 35px;
+  }
 }
 
 .nav-fixed a.navbar-brand {
@@ -11990,9 +12000,9 @@ header {
   position: sticky !important;
   padding: 0px;
   transition: all 0.4s ease 0s;
-  height: 90px;
   display: grid;
   align-items: center;
+  height: 5rem;
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
 }
 
@@ -12002,7 +12012,6 @@ header.nav-fixed {
   z-index: 9 !important;
   background: #fff;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
-  height: 80px;
 }
 
 header.nav-fixed nav.navbar.navbar-expand-lg.stroke {
@@ -12122,7 +12131,7 @@ nav ul li a:hover {
 
   header.nav-fixed {
     height: auto;
-    padding: 14px 0;
+    padding: 7px 0;
     position: fixed !important;
   }
 
@@ -12137,16 +12146,14 @@ nav ul li a:hover {
     width: 34px;
     height: 34px;
     display: inline-block;
-    background: #272121;
     border-radius: 4px;
     text-align: center;
   }
 
   .navbar-toggler-icon.fa {
-    font-size: 20px;
+    font-size: 1.5rem;
     line-height: 1.2em;
-    color: #fff;
-    background: var(--black-color);
+    color: var(--black-color);
     line-height: 34px;
   }
 
@@ -12187,7 +12194,7 @@ nav ul li a:hover {
 
   header {
     height: auto;
-    padding: 17px 0;
+    padding: 10px 0;
   }
 
   header.nav-fixed nav.navbar.navbar-expand-lg.stroke {
@@ -12243,7 +12250,7 @@ nav ul li a:hover {
 
 
 .btn-style {
-  padding: 15px 45px;
+  padding: 0.6rem 0.8rem !important;
   font-size: 16px;
   line-height: 28px;
   font-weight: 500;
